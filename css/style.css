@@ -1,0 +1,652 @@
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/** ---------------------------------------- FONTS ------------------------ **/
+
+@font-face {
+    font-family: "Joselfont";
+    src: url("../fonts/Quicksand-VariableFont_wght.ttf");
+}
+
+
+
+/** ---------------------------------------- GENERAL ------------------------ **/
+
+
+#siteWrapper {
+    position: relative;
+
+    width: 100%;
+
+    margin: 0px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+i {
+    font-style: italic;
+}
+
+em {
+    font-style: italic;
+}
+
+b {
+    font-weight: bold;
+}
+
+u {
+    text-decoration: underline;
+}
+
+body {
+    padding: 0 0;
+    margin: 0 0;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+p {
+    margin: 10px 0px;
+    line-height: 1.1em;
+}
+
+a.textLink {
+    color: #f2f2f2;
+}
+
+blockquote {
+    margin-left: 20px;
+    padding-left: 10px;
+    font-style: italic;
+    border-left: 1px solid lightgrey;
+}
+
+ol {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+ul.indent {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+hr {
+    border-bottom: 1px solid #333;
+    width: 100%;
+}
+
+/**---------------------------------------------index **/
+.indexMenu {
+    position: relative;
+    top: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 600px;
+
+
+}
+
+
+
+.container {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 50%;
+    height: 50%;
+}
+
+.container.one {
+    background-color: aqua;
+}
+
+.container.two {
+    background-color: brown;
+}
+
+.container.three {
+    background-color: darkcyan;
+}
+
+.container.four {
+    background-color: deeppink;
+}
+
+.image {
+
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.image.L {
+    width: 80%;
+    float: right;
+}
+
+.image.R {
+    width: 80%;
+    float: left;
+}
+
+
+
+
+.captionEffect {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.captionEffect img {
+    width: 100%;
+    display: block;
+    -webkit-transition: 800ms;
+    -o-transition: 800ms;
+    transition: 800ms;
+}
+
+.captionEffect figcaption {
+
+
+    position: absolute;
+    -webkit-transition: 800ms;
+    -o-transition: 800ms;
+    transition: 800ms;
+    width: 100%;
+}
+
+.captionEffect[data-effect="fade-in"] figcaption {
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+}
+
+.captionEffect[data-effect="fade-in"]:hover figcaption {
+    opacity: 1;
+}
+
+.captionEffect figcaption h2 {
+    margin: 0;
+    font-size: .875rem;
+}
+
+.captionEffect figcaption p {
+    margin: 0;
+}
+
+
+
+
+
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.middle.L {
+    left: 60%;
+}
+
+.middle.R {
+    left: 40%;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    border-radius: 10px;
+    font-family: "Joselfont";
+    font-weight: bold;
+
+    color: #333;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.text.one {
+    background-color: aqua;
+}
+
+.text.two {
+    background-color: brown;
+}
+
+.text.three {
+    background-color: darkcyan;
+}
+
+.text.four {
+    background-color: deeppink;
+}
+
+
+/** ----------------------------------------- title **/
+.title {
+    position: fixed;
+    width: 100%;
+    height: 140px;
+    font-family: "Joselfont";
+    text-align: center;
+    background-color: #f49b1f;
+
+    z-index: 1000;
+}
+
+.title h1 {
+    font-size: 5em;
+    font-weight: 900;
+    color: #f2f2f2;
+}
+
+.title a {
+    color: #f2f2f2;
+}
+
+.title p {
+    font-size: 1em;
+    color: #f2f2f2;
+}
+
+.title hr {
+    border-bottom: 1px solid #f2f2f2;
+    width: 100%;
+}
+
+/** ---------------------------------------- navigation **/
+
+.lang {
+    font-family: "Joselfont";
+    position: fixed;
+    left: 20px;
+    top: 100px;
+    z-index: 1001;
+    color: #f2f2f2;
+}
+
+.lang a {
+    color: #f2f2f2;
+}
+
+.lang a:hover {
+    color: #cfcfcf;
+}
+
+.topnav {
+    position: fixed;
+    width: 100%;
+    top: 140px;
+    
+    font-family: "Joselfont";
+    overflow: hidden;
+    background-color: #f49b1f;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1000;
+    border-top: 1px solid #f2f2f2;
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-size: 17px;
+    height:30px;
+}
+
+.topnav a:hover {
+    color: #cfcfcf;
+    
+    
+}
+
+.topnav a.one:hover{
+    background-color: aqua;
+}
+.topnav a.two:hover{
+    background-color: brown;
+}
+.topnav a.three:hover{
+    background-color: darkcyan;
+}
+.topnav a.four:hover{
+    background-color: deeppink;
+}
+
+.topnav .icon {
+        position: fixed;
+        top: 75px;
+        right: 20px;
+        display: none;
+    }
+.topnav .icon img{
+    width:25px;
+    height: 25px;
+}
+
+/** ---------------------Main content ---------- **/
+.mainContent {
+    position: relative;
+    top: 180px;
+    width: 100%;
+
+}
+
+.actualContent {
+    position: relative;
+    width: 50%;
+    left: 25%;
+
+    font-family: "Joselfont";
+    color: #333;
+}
+
+.footer {
+    position: sticky;
+    font-family: "Joselfont";
+    text-align: center;
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f49b1f;
+    width: 100%;
+    color: #f2f2f2;
+}
+
+.footer a {
+    color: #f2f2f2;
+}
+.footer a:hover {
+    color: #cfcfcf;
+}
+
+.copy {
+    font-size: .8em;
+}
+
+
+
+/** ------------------------- FORMS -------------------**/
+
+form.contact {
+    font-family: "Joselfont";
+    font-size: .9em;
+}
+
+form legend {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .9em;
+}
+
+form input {
+    font-family: "Joselfont";
+    font-weight: lighter;
+    border: 1px solid #f49b1f;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    width: 99%;
+}
+
+input::placeholder {
+    color: #f49b1f;
+}
+
+textarea::placeholder {
+    color: #f49b1f;
+}
+
+form input:valid {
+    font-family: "Joselfont";
+    border: 1px solid #f49b1f;
+
+    font-size: .9em;
+    color: #333;
+}
+
+input.sendButton:default {
+    background-color: white;
+    color: #f49b1f;
+    font-size: .9em;
+    border: 1px solid #f49b1f;
+    padding-right: 5px;
+    width: auto;
+}
+
+input.sendButton:hover {
+    color: #d66800;
+}
+
+form textarea {
+    vertical-align: text-top;
+    min-height: 150px;
+    font-family: "Joselfont";
+    font-size: .9em;
+    color: #333;
+    border: 1px solid #f49b1f;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    width: 99%;
+}
+
+
+/** ------------------------------Social links ----------- **/
+
+.social {
+    display: inline-block;
+}
+.social img {
+    width: 25px;
+    height: 25px; 
+    padding: 3px 3px;  
+}
+
+.socialLink {
+    position:absolute;  
+    left: 10px;
+    bottom: 10px;
+    background-color: transparent; 
+}
+
+
+/** ----------------------------------------------------------------------------- **/
+/** ----------------------------------------------------------------------------- **/
+/** ---------------------------------------- PHONE MEDIA ------------------------ **/
+/** ----------------------------------------------------------------------------- **/
+/** ----------------------------------------------------------------------------- **/
+
+@media only screen and (max-width: 767px) {
+
+
+    .indexMenu {
+        display: block;
+        top: 120px;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        height: 70%;
+        display: block;
+    }
+
+    .image.L {
+
+        width: 100%;
+
+    }
+
+    .image.R {
+
+        width: 100%;
+
+    }
+
+    .middle.L {
+        left: 50%;
+    }
+
+    .middle.R {
+        left: 50%;
+    }
+
+    /** ------------------------------- TITLE ---------------------------**/
+    .title {
+        height: 120px;
+    }
+
+    .title h1 {
+        font-size: 4em;
+    }
+
+
+
+
+
+    /** ---------- MENU ----------------------------------------- **/
+
+    .lang {
+        top: 80px;
+    }
+
+    .topnav a {
+        display: none;
+    }
+
+    .topnav .icon {
+     
+        display: block;
+    }
+  
+
+    .topnav {
+        top: 120px;
+        height: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .topnav.responsive {
+        position: fixed;
+        top: 120px;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .topnav.responsive a.icon {
+        position: fixed;
+        top: 85px;
+        right: 20px;
+        padding: 0px 5px;
+        margin: 0px 0px;
+        display: block;
+    }
+
+   
+    
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        margin: -10px 0px;
+    }
+
+    #siteMenu a {
+        font-family: "Joselfont";
+        font-size: 1.7em;
+        line-height: 2em;
+        text-decoration: none;
+        color: black;
+    }
+
+    #siteMenu .socialLinks img {
+        width: 44px;
+    }
+
+
+
+
+    /** ---------------------Main content ---------- **/
+    .mainContent {
+        top: 120px;
+    }
+
+    .actualContent {
+        position: relative;
+        width: 90%;
+        left: 5%;
+        font-family: "Joselfont";
+        color: #333;
+    }
+    
+    /** ------------------------------Social links ----------- **/
+
+    
+    .social img {
+        width: 20px;
+        height: 20px; 
+        padding: 3px 3px;  
+    }
+
+}
+
+
+/** ----------------------------------------------------------------------------- **/
+/** ----------------------------------------------------------------------------- **/
+/** ---------------------------------------- LARGE MEDIA ------------------------ **/
+/** ----------------------------------------------------------------------------- **/
+/** ----------------------------------------------------------------------------- **/
+
+
+
+@media only screen and (min-width: 768px) {
+
+
+    /** ---------- MENU ----------------------------------------- **/
+
+
+
+    #siteMenu .lang a {
+        font-family: "CANFont-thin";
+        font-size: 1.7em;
+        line-height: 2em;
+        text-decoration: none;
+        color: black;
+    }
+
+    #siteMenu .socialLinks img {
+        width: 44px;
+    }
+
+}
