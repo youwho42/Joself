@@ -20,11 +20,9 @@
     <body>
         
         <div id="siteWrapper">
-            
-                <!-- title -->
-                <div class="title">
-                    <h1><a href="index.php">JOSELF</a></h1>
-                    <p>I do things</p>
-                    
-                    <br>
-                </div>
+            <div class="title">
+  <h1>
+    <a href="index.php">JOSELF</a>
+  </h1>
+  
+           

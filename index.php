@@ -1,10 +1,19 @@
 
+
                 <!-- title -->
                 
                     <?php include 'header.php';?>
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 0 20px; color: #f2f2f2">
+    <span></span>
+    <span>I do stuff</span>
+      <span></span>
+                </div>
+</div>
+
                 <div class="lang">
                     <p><a href="">fr</a> - <a href="">en</a></p>
                 </div>
+
                 <!-- main content -->
 
                 <div class="indexMenu">
